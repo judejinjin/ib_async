@@ -1,0 +1,4 @@
+eventkit
+nest_asyncio
+PyQt5
+ipykernel

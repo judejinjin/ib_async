@@ -12,7 +12,7 @@ class TkApp:
     """
 
     def __init__(self):
-        self.ib = IB().connect()
+        self.ib = IB().connect(port=7496, readonly=True)
         self.root = tk.Tk()
         self.root.protocol("WM_DELETE_WINDOW", self._onDeleteWindow)
         self.entry = tk.Entry(self.root, width=50)
